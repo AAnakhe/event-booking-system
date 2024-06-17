@@ -14,7 +14,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 @OpenAPIDefinition(
 		info = @Info(
-				contact = @Contact(name = "MusalaSoft", email = "qinshifthiringteam@musalasoft.com"),
+				contact = @Contact(name = "Ajavacode", email = "id3velope@gmail.com"),
 				title = "Event Booking API.",
 				version = "1.0.0"
 		),
