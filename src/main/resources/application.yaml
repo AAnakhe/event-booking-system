@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: development
+
+  #configure database
+  datasource:
+    url: jdbc:h2:mem:db_event_booking
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+#Configure sandbox for sending email notifications
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 587
+    username: 015289061cbedd
+    password: 9b42c3889c32ce
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+#Configure swagger docs and ui path
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
